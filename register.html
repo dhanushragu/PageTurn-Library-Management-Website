@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Library | PageTurn Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body><header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span class="logo-icon">P</span><span>Page<span class="logo-highlight">Turn</span></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="nav-links" aria-label="Main navigation"><a href="index.html" class="">Home</a>
+<a href="books.html" class="">Browse Books</a>
+<a href="categories.html" class="">Categories</a>
+<a href="about.html" class="">About Us</a>
+<a href="contact.html" class="">Contact</a></nav>
+    <div class="nav-actions"><a class="login-link" href="login.html">Log In</a><a class="btn" href="register.html">Join Library</a></div>
+  </div>
+</header>
+<main class="auth-wrap"><form class="auth-card demo-form" id="registerForm"><span class="eyebrow">JOIN OUR READING COMMUNITY</span><h1>Create your <span>account.</span></h1><p>Register to start your reading journey.</p><div class="form-group"><label for="fullName">Full name</label><input id="fullName" name="name" required placeholder="Your full name" autocomplete="name"></div><div class="form-group"><label for="registerEmail">Email address</label><input id="registerEmail" type="email" name="email" required placeholder="you@example.com" autocomplete="email"></div><div class="form-group"><label for="memberPhone">Phone number (optional)</label><input id="memberPhone" type="tel" name="phone" placeholder="Your phone number" autocomplete="tel"></div><div class="form-group"><label for="registerPassword">Create password</label><input id="registerPassword" type="password" name="password" minlength="6" required placeholder="At least 6 characters" autocomplete="new-password"></div><div class="form-group"><label for="confirmPassword">Confirm password</label><input id="confirmPassword" type="password" name="confirmPassword" minlength="6" required placeholder="Enter password again" autocomplete="new-password"></div><button class="btn" type="submit" style="width:100%">Create Account →</button><div class="form-message" id="registerMessage" role="status"></div><p class="auth-switch">Already a member? <a href="login.html">Log in</a></p><p class="form-note">Demo only. Do not enter a real password; this form does not create an account.</p></form></main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-icon">P</span><span>Page<span class="logo-highlight">Turn</span></span></a><p>Every book is a new adventure. Discover knowledge, explore stories, and keep turning pages.</p></div>
+    <div class="footer-col"><h3>Explore</h3><a href="index.html">Home</a><a href="books.html">Browse Books</a><a href="categories.html">Categories</a></div>
+    <div class="footer-col"><h3>Our Library</h3><a href="about.html">About Us</a><a href="membership.html">Membership</a><a href="contact.html">Contact Us</a></div>
+    <div class="footer-col"><h3>Contact</h3><a href="mailto:library@example.com">library@example.com</a><p>Monday – Saturday</p><p>9:00 AM – 6:00 PM</p></div>
+  </div>
+  <div class="container footer-bottom"><p>© 2026 PageTurn Library. All rights reserved.</p><p>Made for readers, built for discovery.</p></div>
+</footer>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browse Books | PageTurn Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body><header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span class="logo-icon">P</span><span>Page<span class="logo-highlight">Turn</span></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="nav-links" aria-label="Main navigation"><a href="index.html" class="">Home</a>
+<a href="books.html" class="active">Browse Books</a>
+<a href="categories.html" class="">Categories</a>
+<a href="about.html" class="">About Us</a>
+<a href="contact.html" class="">Contact</a></nav>
+    <div class="nav-actions"><a class="login-link" href="login.html">Log In</a><a class="btn" href="register.html">Join Library</a></div>
+  </div>
+</header>
+<main><section class="page-hero"><div class="container intro"><div class="breadcrumb"><a href="index.html">Home</a> / Browse Books</div><span class="eyebrow">THE COLLECTION</span><h1>Find your next <span>favorite.</span></h1><p>Search our sample collection by title or author, or filter by category and availability.</p></div></section>
+<section class="container section"><form class="toolbar" id="bookFilters"><input type="search" id="bookSearch" placeholder="Search by book title or author..." aria-label="Search by title or author"><select id="categoryFilter" aria-label="Filter by category"><option value="">All categories</option><option>Fiction</option><option>Science</option><option>Technology</option><option>History</option><option>Business</option><option>Self-Development</option></select><select id="availabilityFilter" aria-label="Filter by availability"><option value="">Any availability</option><option value="available">Available</option><option value="unavailable">Unavailable</option></select><button type="reset" class="btn btn-outline">Clear filters</button></form>
+<p class="results-count" id="resultsCount">Showing 8 sample books</p><div class="grid book-grid" id="bookGrid"><article class="book-card" data-category="fiction" data-title="to kill a mockingbird" data-author="harper lee">
+      <div class="book-image" style="background:#eae4d6">
+        <img src="https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg" alt="To Kill a Mockingbird book cover" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-placeholder" style="display:none"><strong>To Kill a Mockingbird</strong><small>Harper Lee</small></div>
+        <span class="book-badge">Popular</span>
+      </div>
+      <div class="book-details"><span class="book-category">FICTION</span><h3>To Kill a Mockingbird</h3><p class="book-author">Harper Lee</p>
+      <div class="book-meta"><span class="rating">★ 4.8</span><span class="status available">Available</span></div>
+      <a class="book-btn" href="book-details.html?book=1">View Details →</a></div>
+    </article>
+<article class="book-card" data-category="technology" data-title="the c programming language" data-author="brian w. kernighan">
+      <div class="book-image" style="background:#e0e8f0">
+        <img src="https://covers.openlibrary.org/b/isbn/9780131103627-L.jpg" alt="The C Programming Language book cover" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-placeholder" style="display:none"><strong>The C Programming Language</strong><small>Brian W. Kernighan</small></div>
+        <span class="book-badge">Technology</span>
+      </div>
+      <div class="book-details"><span class="book-category">PROGRAMMING</span><h3>The C Programming Language</h3><p class="book-author">Brian W. Kernighan</p>
+      <div class="book-meta"><span class="rating">★ 4.7</span><span class="status available">Available</span></div>
+      <a class="book-btn" href="book-details.html?book=2">View Details →</a></div>
+    </article>
+<article class="book-card" data-category="fiction" data-title="the great gatsby" data-author="f. scott fitzgerald">
+      <div class="book-image" style="background:#f0e1d7">
+        <img src="https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg" alt="The Great Gatsby book cover" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-placeholder" style="display:none"><strong>The Great Gatsby</strong><small>F. Scott Fitzgerald</small></div>
+        <span class="book-badge">Classic</span>
+      </div>
+      <div class="book-details"><span class="book-category">CLASSIC FICTION</span><h3>The Great Gatsby</h3><p class="book-author">F. Scott Fitzgerald</p>
+      <div class="book-meta"><span class="rating">★ 4.6</span><span class="status unavailable">Unavailable</span></div>
+      <a class="book-btn" href="book-details.html?book=3">View Details →</a></div>
+    </article>
+<article class="book-card" data-category="fiction" data-title="harry potter and the philosopher's stone" data-author="j. k. rowling">
+      <div class="book-image" style="background:#e5e2ef">
+        <img src="https://covers.openlibrary.org/b/isbn/9780747532699-L.jpg" alt="Harry Potter and the Philosopher's Stone book cover" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-placeholder" style="display:none"><strong>Harry Potter and the Philosopher's Stone</strong><small>J. K. Rowling</small></div>
+        <span class="book-badge">Bestseller</span>
+      </div>
+      <div class="book-details"><span class="book-category">FANTASY</span><h3>Harry Potter and the Philosopher's Stone</h3><p class="book-author">J. K. Rowling</p>
+      <div class="book-meta"><span class="rating">★ 4.9</span><span class="status available">Available</span></div>
+      <a class="book-btn" href="book-details.html?book=4">View Details →</a></div>
+    </article>
+<article class="book-card" data-category="self-development" data-title="atomic habits" data-author="james clear">
+      <div class="book-image" style="background:#e7eee2">
+        <img src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg" alt="Atomic Habits book cover" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-placeholder" style="display:none"><strong>Atomic Habits</strong><small>James Clear</small></div>
+        <span class="book-badge">Reader Pick</span>
+      </div>
+      <div class="book-details"><span class="book-category">SELF-DEVELOPMENT</span><h3>Atomic Habits</h3><p class="book-author">James Clear</p>
+      <div class="book-meta"><span class="rating">★ 4.8</span><span class="status available">Available</span></div>
+      <a class="book-btn" href="book-details.html?book=5">View Details →</a></div>
+    </article>
+<article class="book-card" data-category="science" data-title="a brief history of time" data-author="stephen hawking">
+      <div class="book-image" style="background:#e3eaf2">
+        <img src="https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg" alt="A Brief History of Time book cover" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-placeholder" style="display:none"><strong>A Brief History of Time</strong><small>Stephen Hawking</small></div>
+        <span class="book-badge">Science</span>
+      </div>
+      <div class="book-details"><span class="book-category">SCIENCE</span><h3>A Brief History of Time</h3><p class="book-author">Stephen Hawking</p>
+      <div class="book-meta"><span class="rating">★ 4.7</span><span class="status available">Available</span></div>
+      <a class="book-btn" href="book-details.html?book=6">View Details →</a></div>
+    </article>
+<article class="book-card" data-category="business" data-title="the lean startup" data-author="eric ries">
+      <div class="book-image" style="background:#f4e8d6">
+        <img src="https://covers.openlibrary.org/b/isbn/9780307887894-L.jpg" alt="The Lean Startup book cover" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-placeholder" style="display:none"><strong>The Lean Startup</strong><small>Eric Ries</small></div>
+        <span class="book-badge">Business</span>
+      </div>
+      <div class="book-details"><span class="book-category">BUSINESS</span><h3>The Lean Startup</h3><p class="book-author">Eric Ries</p>
+      <div class="book-meta"><span class="rating">★ 4.5</span><span class="status available">Available</span></div>
+      <a class="book-btn" href="book-details.html?book=7">View Details →</a></div>
+    </article>
+<article class="book-card" data-category="history" data-title="sapiens" data-author="yuval noah harari">
+      <div class="book-image" style="background:#e9e2d9">
+        <img src="https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg" alt="Sapiens book cover" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-placeholder" style="display:none"><strong>Sapiens</strong><small>Yuval Noah Harari</small></div>
+        <span class="book-badge">Popular</span>
+      </div>
+      <div class="book-details"><span class="book-category">HISTORY</span><h3>Sapiens</h3><p class="book-author">Yuval Noah Harari</p>
+      <div class="book-meta"><span class="rating">★ 4.8</span><span class="status unavailable">Unavailable</span></div>
+      <a class="book-btn" href="book-details.html?book=8">View Details →</a></div>
+    </article></div><div class="empty-state" id="emptyState"><h3>No books found</h3><p>Try another title or change your filters.</p></div>
+<p class="form-note">Note: This is a frontend demonstration. Book details and availability are sample data.</p></section></main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-icon">P</span><span>Page<span class="logo-highlight">Turn</span></span></a><p>Every book is a new adventure. Discover knowledge, explore stories, and keep turning pages.</p></div>
+    <div class="footer-col"><h3>Explore</h3><a href="index.html">Home</a><a href="books.html">Browse Books</a><a href="categories.html">Categories</a></div>
+    <div class="footer-col"><h3>Our Library</h3><a href="about.html">About Us</a><a href="membership.html">Membership</a><a href="contact.html">Contact Us</a></div>
+    <div class="footer-col"><h3>Contact</h3><a href="mailto:library@example.com">library@example.com</a><p>Monday – Saturday</p><p>9:00 AM – 6:00 PM</p></div>
+  </div>
+  <div class="container footer-bottom"><p>© 2026 PageTurn Library. All rights reserved.</p><p>Made for readers, built for discovery.</p></div>
+</footer>
+<script src="script.js"></script>
+</body></html>
